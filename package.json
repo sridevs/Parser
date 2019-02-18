@@ -1,0 +1,29 @@
+{
+  "name": "parser",
+  "version": "0.0.1",
+  "description": "A parser which extracts the meaning of the code to be compiled",
+  "main": "parser.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridevs/Parser.git"
+  },
+  "author": "senthilnathansridev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sridevs/Parser/issues"
+  },
+  "homepage": "https://github.com/sridevs/Parser#readme",
+  "dependencies": {
+    "jison": "0.4.x"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nyc": "13.3.0"
+  }
+}
