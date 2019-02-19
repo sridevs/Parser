@@ -15,8 +15,7 @@
 
 /* operator associations and precedence */
 
-%left '#'
-%token ALPHANUMERIC
+%left '#' ALPHANUMERIC
 
 %start expressions
 
@@ -29,10 +28,11 @@ expressions
     ;
 
 e
-    : HEADER e
+    : ALPHANUMERIC
+    {$$ = `<p>${yytext}</p>`;}
+
+    | HEADER ALPHANUMERIC
         {
         $$ = `<h1>${$2}</h1>`;
         }
-    | ALPHANUMERIC
-        {$$ = yytext;}
     ;
